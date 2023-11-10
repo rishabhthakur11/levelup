@@ -31,7 +31,7 @@ function Navbar() {
             Sign Up
           </button>
         </div>
-        <div className="lg:hidden text-black">
+        <div className="lg:hidden text-black relative">
           <div className="z-50">
             {sideBarIcon ? (
               <MenuIcon onClick={manageSideBar} />
@@ -40,7 +40,7 @@ function Navbar() {
             )}
           </div>
           {sideBar ? (
-            <div className="bg-white fixed top-0 left-0 w-3/4 md:w-1/2 h-screen   lg:hidden">
+            <div className="bg-white fixed top-0 left-0 w-3/4 md:w-1/2 h-screen  lg:hidden z-[100]">
               <SideBar />
             </div>
           ) : null}

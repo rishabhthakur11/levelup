@@ -4,12 +4,12 @@ import ide from "/public/assets/ide.png";
 
 function Apply() {
   return (
-    <div className="py-24">
+    <div className="pt-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-center">
         <div className="mt-10 rounded-full w-12 h-12 bg-themeBlue flex items-center justify-center text-black font-bold text-xl  mx-auto">
           2
         </div>
-        <h2 className="mt-10 text-center text-6xl lg:text-7xl font-bold  leading-8 text-themeBlue tracking-wider">
+        <h2 className="mt-10 text-center text-5xl lg:text-7xl font-bold  leading-12 text-themeBlue tracking-wider">
           Powerful IDE with AI Tooling
         </h2>
         <p className="mx-auto max-w-2xl mt-6 text-lg leading-6 text-textGray text-center">
