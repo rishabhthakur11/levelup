@@ -3,7 +3,7 @@ import React from "react";
 
 export const SideBar = () => {
   return (
-    <div className="text-lg font-normal text-textGray  gap-y-8 flex flex-col mt-10 ml-6 z-[100]">
+    <div className="text-lg font-normal text-textGray  gap-y-8 flex flex-col mt-10 ml-6">
       <Link className="" href="#">
         Learn
       </Link>

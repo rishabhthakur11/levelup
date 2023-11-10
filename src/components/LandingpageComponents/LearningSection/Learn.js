@@ -5,7 +5,7 @@ import img2 from "/public/assets/img2.png";
 
 function Learn() {
   return (
-    <div className="pt-24">
+    <div className="mt-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-center">
         <h2 className="text-center text-lg font-semibold leading-8 text-textGray tracking-wider">
           EXPLORE THE LEVELUP WAY
@@ -21,8 +21,8 @@ function Learn() {
           courses, and receive 24x7 assistance as you develop your skills
         </p>
       </div>
-      <div>
-        <div className="container mx-auto flex px-8 py-24 md:flex-row flex-col items-center">
+      <div className="max-w-7xl mx-auto">
+        <div className="container mx-auto flex px-8 py-24 md:flex-row flex-col  justify-between">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               className="object-cover object-center rounded"
@@ -30,8 +30,8 @@ function Learn() {
               src={img1}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-28 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font text-2xl mb-4 font-medium text-btnOrange">
+          <div className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 className="text-2xl mb-4 font-semibold text-btnOrange">
               Hands-on practice
             </h1>
             <p className="mb-8 leading-relaxed text-textGray text-md">
@@ -41,8 +41,7 @@ function Learn() {
             </p>
           </div>
         </div>
-
-        <div className="container mx-auto flex px-8 py-5 md:py-18 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex px-8  md:mt-20  md:flex-row flex-col justify-between">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               className="object-cover object-center rounded"
@@ -50,12 +49,12 @@ function Learn() {
               src={img2}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-28 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font text-2xl mb-4 font-medium text-btnOrange">
-              Customised Roadmaps
+          <div className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 className="text-2xl mb-4 font-semibold text-btnOrange">
+            Customised Roadmaps
             </h1>
             <p className="mb-8 leading-relaxed text-textGray text-md">
-              At levelUp, you get a customised roadmap, providing outlined
+            At levelUp, you get a customised roadmap, providing outlined
               step-by-step preparations for their aspiring career field.
             </p>
           </div>

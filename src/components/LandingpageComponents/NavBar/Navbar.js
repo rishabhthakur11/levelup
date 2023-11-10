@@ -12,7 +12,7 @@ function Navbar() {
     setSideBarIcon(!sideBarIcon);
   };
   return (
-    <div className="flex py-10 items-center px-5 ">
+    <div className="flex py-10 items-center px-5">
       {/* leftSide */}
       <div className="flex gap-x-24 text-black  items-center grow">
         <p className="text-3xl font-bold">LevelUp</p>
@@ -40,7 +40,7 @@ function Navbar() {
             )}
           </div>
           {sideBar ? (
-            <div className="bg-white fixed top-0 left-0 w-3/4 md:w-1/2 h-screen  lg:hidden z-[100]">
+            <div className="bg-white fixed top-0 left-0 w-3/4 md:w-1/2 h-screen  lg:hidden z-50">
               <SideBar />
             </div>
           ) : null}

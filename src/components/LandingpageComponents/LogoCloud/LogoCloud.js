@@ -11,12 +11,12 @@ import wissen from "/public/assets/brands/image 10.png";
 
 export default function LogoCloud() {
   return (
-    <div className="py-24">
+    <div className="pt-12 lg:pt-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-textGray tracking-wider">
           POWERING PROPLE TO LAND THEIR DREAM JOB
         </h2>
-        <div className="mx-auto mt-10 max-w-lg lg:max-w-none grid grid-cols-2 items-center gap-x-8 gap-y-10 lg:grid-cols-4">
+        <div className="mx-auto mt-10 max-w-4xl  grid grid-cols-2 items-center gap-x-10 gap-y-10 lg:grid-cols-4">
           <Image
             className="col-span-1 max-h-12 w-full object-contain"
             src={apple}

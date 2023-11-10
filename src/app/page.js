@@ -8,16 +8,16 @@ import Navbar from "@/components/LandingpageComponents/NavBar/Navbar";
 export default function Home() {
   return (
     <main className="bg-backgroundColor h-fit w-full">
-      <div className="max-w-7xl mx-auto sticky">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
       </div>
       <div>
         <HeroSection />
       </div>
-      <div className="mt-12 lg:mt-32">
+      <div className="mt-12 lg:mt-44">
         <LogoCloud />
       </div>
-      <div className="">
+      <div className="mx-auto">
         <Learn />
         <Apply />
         <Grow />
