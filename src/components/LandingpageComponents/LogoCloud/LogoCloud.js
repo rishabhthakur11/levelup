@@ -11,7 +11,7 @@ import wissen from "/public/assets/brands/image 10.png";
 
 export default function LogoCloud() {
   return (
-    <div className="py-24 ">
+    <div className="py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-textGray tracking-wider">
           POWERING PROPLE TO LAND THEIR DREAM JOB
