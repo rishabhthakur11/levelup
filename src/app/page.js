@@ -4,6 +4,7 @@ import Grow from "@/components/LandingpageComponents/LearningSection/Grow";
 import Learn from "@/components/LandingpageComponents/LearningSection/Learn";
 import LogoCloud from "@/components/LandingpageComponents/LogoCloud/LogoCloud";
 import Navbar from "@/components/LandingpageComponents/NavBar/Navbar";
+import SignInOptions from "@/components/LandingpageComponents/SignInOptions/SignInOptions";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
         <Learn />
         <Apply />
         <Grow />
+      </div>
+      <div>
+        <SignInOptions />
       </div>
     </main>
   );

@@ -14,6 +14,7 @@ module.exports = {
       themeBlue: "#6BB3FD",
       themeGreen: "#94D72D",
       textGray: "#71717A",
+      divided: "#D2D0E6"
     },
     extend: {
       backgroundImage: {

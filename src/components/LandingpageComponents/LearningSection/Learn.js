@@ -23,7 +23,7 @@ function Learn() {
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="container mx-auto flex px-8 py-24 md:flex-row flex-col  justify-between">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               className="object-cover object-center rounded"
               alt="hero"
@@ -42,7 +42,7 @@ function Learn() {
           </div>
         </div>
         <div className="container mx-auto flex px-8  md:mt-20  md:flex-row flex-col justify-between">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               className="object-cover object-center rounded"
               alt="hero"
