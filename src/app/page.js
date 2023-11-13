@@ -1,3 +1,4 @@
+import Footer from "@/components/LandingpageComponents/Footer/Footer";
 import HeroSection from "@/components/LandingpageComponents/HeroSection/HeroSection";
 import Apply from "@/components/LandingpageComponents/LearningSection/Apply";
 import Grow from "@/components/LandingpageComponents/LearningSection/Grow";
@@ -25,6 +26,9 @@ export default function Home() {
       </div>
       <div>
         <SignInOptions />
+      </div>
+      <div>
+        <Footer/>
       </div>
     </main>
   );
