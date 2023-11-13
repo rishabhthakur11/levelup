@@ -37,6 +37,12 @@ function Grow() {
             <p className="mb-8 leading-relaxed text-textGray text-md">
               Explore career opportunity and take the test at your convenience
             </p>
+            <h1 className="text-2xl mb-4 font-semibold text-themeGreen">
+            Skill Development Resources
+            </h1>
+            <p className="mb-8 leading-relaxed text-textGray text-md">
+            Curate a list of online courses, workshops, and resources to help users develop the skills necessary for their chosen career paths. Include both free and paid options
+            </p>
           </div>
         </div>
 
@@ -48,6 +54,13 @@ function Grow() {
             <p className="mb-8 leading-relaxed text-textGray text-md">
               Indias finest companies trust LevelUp to hire, Crack the test, get
               hired!
+            </p>
+
+            <h1 className="title-font text-2xl mb-4 font-semibold text-themeGreen">
+            Interview Tips from Employers
+            </h1>
+            <p className="mb-8 leading-relaxed text-textGray text-md">
+            Offer advice from hiring managers and recruiters at leading companies. Provide insights into what they look for in candidates and tips for performing well in interviews
             </p>
           </div>
           <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
