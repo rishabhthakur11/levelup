@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { SideBar } from "./SideBar";
+import Link from "next/link";
 
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
@@ -26,7 +27,10 @@ function Navbar() {
       {/* rightSide */}
       <div>
         <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
-          <p>Log In</p>
+          <Link href="/auth/login">
+          <p className="hover:font-semibold cursor-pointer">Log In</p>
+          </Link>
+         
           <button className="bg-black text-white px-4 py-2 rounded-full">
             Sign Up
           </button>
