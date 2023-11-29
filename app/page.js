@@ -28,7 +28,7 @@ export default function Home() {
         <SignInOptions />
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </main>
   );
