@@ -16,7 +16,9 @@ function Navbar() {
     <div className="flex py-10 items-center px-5">
       {/* leftSide */}
       <div className="flex gap-x-24 text-black  items-center grow">
-        <p className="text-3xl font-bold">LevelUp</p>
+        <Link href="/">
+          <p className="text-3xl font-bold curser-pointer">LevelUp</p>
+        </Link>
         <div className="flex gap-x-12 text-lg font-normal hidden lg:flex">
           <p>Learn</p>
           <p>Tests</p>
@@ -28,9 +30,11 @@ function Navbar() {
       <div>
         <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
           <Link href="/auth/login">
-          <p className="hover:font-semibold cursor-pointer">Log In</p>
+            <p className="hover:font-semibold cursor-pointer duration-300">
+              Log In
+            </p>
           </Link>
-         
+
           <button className="bg-black text-white px-4 py-2 rounded-full">
             Sign Up
           </button>

@@ -10,7 +10,7 @@ function page() {
       <div className="max-w-7xl mx-auto">
         <Navbar />
       </div>
-      <div className="flex items-center justify-center my-32 px-4">
+      <div className="flex items-center justify-center my-12 px-4">
         <div className="flex flex-col w-full max-w-md px-4 py-8 border border-divided rounded-lg shadow sm:px-6 md:px-8 items-center justify-center">
           <div className="self-center mb-6 text-xl font-light text-textGray sm:text-2xl">
             Login To Your Account
