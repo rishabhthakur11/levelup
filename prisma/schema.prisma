@@ -1,0 +1,16 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Course {
+  id          String  @id @default(uuid()) @map("_id") @db.ObjectId
+  userId      String
+  title       String
+  description String
+  imageUrl    String
+  price       Float?
+  isPublished Boolean @default(false)
+
+  categoryId String?
+}
