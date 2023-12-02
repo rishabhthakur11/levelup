@@ -14,7 +14,7 @@ export default function LogoCloud() {
     <div className="pt-12 lg:pt-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-textGray tracking-wider">
-          POWERING PROPLE TO LAND THEIR DREAM JOB
+          POWERING PEOPLE TO LAND THEIR DREAM JOB
         </h2>
         <div className="mx-auto mt-10 max-w-4xl  grid grid-cols-2 items-center gap-x-10 gap-y-10 lg:grid-cols-4">
           <Image

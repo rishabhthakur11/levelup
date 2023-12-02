@@ -4,6 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { SideBar } from "./SideBar";
 import Link from "next/link";
+import { SignInButton, SignUpButton } from "@clerk/nextjs";
 
 function Navbar() {
   const [sideBar, setSideBar] = useState(false);
@@ -29,15 +30,17 @@ function Navbar() {
       {/* rightSide */}
       <div>
         <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
-          <Link href="/auth/login">
-            <p className="hover:font-semibold cursor-pointer duration-300">
-              Log In
-            </p>
-          </Link>
+          <p className="hover:font-semibold cursor-pointer duration-400">
+            <SignInButton>
+              <p>Log In</p>
+            </SignInButton>
+          </p>
 
-          <button className="bg-black text-white px-4 py-2 rounded-full">
-            Sign Up
-          </button>
+          <SignUpButton>
+            <button className="bg-black text-white px-4 py-2 rounded-full">
+              Sign Up
+            </button>
+          </SignUpButton>
         </div>
         <div className="lg:hidden text-black relative">
           <div className="z-50">
