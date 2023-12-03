@@ -31,12 +31,11 @@ function Navbar() {
       <div>
         <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
           <p className="hover:font-semibold cursor-pointer duration-400">
-            <SignInButton>
+            <SignInButton afterSignInUrl="/dashboard">
               <p>Log In</p>
             </SignInButton>
           </p>
-
-          <SignUpButton>
+          <SignUpButton afterSignUpUrl="/dashboard">
             <button className="bg-black text-white px-4 py-2 rounded-full">
               Sign Up
             </button>
