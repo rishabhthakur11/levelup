@@ -15,7 +15,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="text-center leading-tight">
-              <h1 className="text-6xl lg:text-7xl font-black  text-black leading-tight tracking-wider">
+              <h1 data-aos="zoom-in-up" className="text-6xl lg:text-7xl font-black  text-black leading-tight tracking-wider">
                 Change the world with{" "}
                 <span className="text-btnOrange">Level</span>Up
               </h1>
