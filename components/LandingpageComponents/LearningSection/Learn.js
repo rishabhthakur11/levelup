@@ -31,7 +31,8 @@ function Learn() {
               src={img1}
             />
           </div>
-          <div data-aos="fade-left" className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+          <div className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+            <div data-aos="fade-left">
             <h1 className="text-2xl mb-4 font-semibold text-btnOrange">
               Hands-on practice
             </h1>
@@ -40,6 +41,15 @@ function Learn() {
               solving real-world challenges in our interactive labs, all within
               your browser.
             </p>
+            </div>
+            <div data-aos="fade-left">
+            <h1 className="text-2xl mb-4 font-semibold text-btnOrange">
+            Power of Hands-On Learning
+            </h1>
+            <p className="mb-8 leading-relaxed text-textGray text-md">
+            Level up your skills with our immersive learning platform and discover the transformative impact of hands-on practice.
+            </p>
+            </div>
           </div>
         </div>
         <div className="container mx-auto flex px-8  md:mt-20  md:flex-row flex-col justify-between">
@@ -50,7 +60,8 @@ function Learn() {
               src={img2}
             />
           </div>
-          <div data-aos="fade-left" className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+          <div className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+            <div data-aos="fade-left">
             <h1 className="text-2xl mb-4 font-semibold text-btnOrange">
             Customised Roadmaps
             </h1>
@@ -58,6 +69,15 @@ function Learn() {
             At levelUp, you get a customised roadmap, providing outlined
               step-by-step preparations for their aspiring career field.
             </p>
+            </div>
+            <div data-aos="fade-left">
+            <h1 className="text-2xl mb-4 font-semibold text-btnOrange">
+            Navigate Your Career Journey
+            </h1>
+            <p className="mb-8 leading-relaxed text-textGray text-md">
+            Experience the difference a tailored roadmap can make and take control of your future success.
+            </p>
+            </div>
           </div>
         </div>
       </div>
