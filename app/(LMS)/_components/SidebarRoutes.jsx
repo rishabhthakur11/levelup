@@ -44,7 +44,7 @@ const guestRoutes = [
   {
     icon: Brush,
     label: "whiteboard",
-    href: "/whiteboard",
+    href: "/editor",
   },
   {
     icon: Users,
