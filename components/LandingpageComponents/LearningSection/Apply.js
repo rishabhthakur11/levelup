@@ -5,7 +5,7 @@ import ide from "/public/assets/ide.png";
 function Apply() {
   return (
     <div className="mt-28">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-center">
+      <div data-aos="fade-up" className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-center">
       <h2 className="text-center text-lg font-semibold leading-8 text-textGray tracking-wider">
           WORK TO LEVELUP YOUR SKILLS
         </h2>
@@ -23,14 +23,14 @@ function Apply() {
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="container mx-auto flex px-8 pt-24 md:flex-row flex-col items-center  justify-between">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div data-aos="zoom-in" className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               className="object-cover object-center rounded"
               alt="hero"
               src={ide}
             />
           </div>
-          <div className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+          <div data-aos="fade-left" className=" md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font text-2xl mb-4 font-semibold text-themeBlue">
               Practice 100+ projects
             </h1>

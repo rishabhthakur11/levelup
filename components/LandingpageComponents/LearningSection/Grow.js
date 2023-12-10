@@ -6,7 +6,7 @@ import Image from "next/image";
 function Grow() {
   return (
     <div className="mt-28">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-center">
+      <div data-aos="fade-up" className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-center">
       <h2 className="text-center text-lg font-semibold leading-8 text-textGray tracking-wider">
           GROW THE LEVELUP WAY
         </h2>
@@ -23,14 +23,14 @@ function Grow() {
       </div>
       <div  className="max-w-7xl mx-auto">
         <div className="container mx-auto flex px-8 py-24 md:flex-row flex-col  justify-between">
-          <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div data-aos="fade-right" className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               className="object-cover object-center rounded"
               alt="hero"
               src={img3}
             />
           </div>
-          <div className="md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+          <div data-aos="fade-left" className="md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="text-2xl mb-4 font-semibold text-themeGreen">
               Take LevelUp Test
             </h1>
@@ -47,7 +47,7 @@ function Grow() {
         </div>
 
         <div className="container mx-auto flex px-8  md:flex-row justify-between flex-col-reverse">
-          <div className="md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
+          <div data-aos="fade-right" className="md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font text-2xl mb-4 font-semibold text-themeGreen">
               Get Hired by top employeers
             </h1>
@@ -63,7 +63,7 @@ function Grow() {
             Offer advice from hiring managers and recruiters at leading companies. Provide insights into what they look for in candidates and tips for performing well in interviews
             </p>
           </div>
-          <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div data-aos="fade-left" className="lg:max-w-md lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
               className="object-cover object-center rounded"
               alt="hero"

@@ -1,0 +1,13 @@
+@keyframes colorChange {
+    0% { background-color:   #FF9900; }
+    25% { background-color:   #ffc738; }
+    50% { background-color: #ffbd59; }
+    75% { background-color: #f2af71; }
+    100% { background-color: #ffcc01; }
+  }
+
+ 
+  .color-changing-div {
+    /* background-color: red; */
+    animation: colorChange 4s infinite; /* 4s duration, infinite loop */
+  }

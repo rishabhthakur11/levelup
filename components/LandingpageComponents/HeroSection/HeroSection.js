@@ -2,20 +2,22 @@
 
 import Image from "next/image";
 import heroImage from "/public/assets/hero-image1.png";
+import './index.css'
 
 export default function HeroSection() {
   return (
     <>
       <div>
+        
         <div className="isolate px-6 lg:px-8 z-10 max-w-7xl mx-auto">
           <div className="mx-auto max-w-2xl pt-20 lg:pt-20">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="bg-btnOrange/70 rounded-full px-16 py-1 text-lg text-black">
+              <div className="color-changing-div bg-btnOrange/70 rounded-full px-16 py-1 text-lg text-black">
                 Get Your Dream Job With LevelUp.
               </div>
             </div>
             <div className="text-center leading-tight">
-              <h1 className="text-6xl lg:text-7xl font-black  text-black leading-tight tracking-wider">
+              <h1 data-aos="zoom-in-up" className="text-6xl lg:text-7xl font-black  text-black leading-tight tracking-wider">
                 Change the world with{" "}
                 <span className="text-btnOrange">Level</span>Up
               </h1>
