@@ -49,7 +49,7 @@ model Chapter {
   title       String?
   description String?
   videoUrl    String?
-  position    Int
+  position    Int     @unique
   isPublished Boolean @default(false)
   isFree      Boolean @default(false)
 

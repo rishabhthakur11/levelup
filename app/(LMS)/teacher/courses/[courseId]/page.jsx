@@ -28,7 +28,7 @@ async function courseIdPage({ params }) {
       include: {
         chapters: {
           orderBy: {
-            createdAt: "desc",
+            createdAt: "asc",
           },
         },
         attachments: {
