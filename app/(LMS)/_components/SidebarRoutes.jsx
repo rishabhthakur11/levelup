@@ -1,6 +1,16 @@
 "use client";
 import React from "react";
-import { BarChart, Compass, Layout, List, PenSquare } from "lucide-react";
+import {
+  Award,
+  BarChart,
+  Brush,
+  Compass,
+  Layout,
+  List,
+  Route,
+  Users,
+  Youtube,
+} from "lucide-react";
 import Sidebaritem from "./Sidebaritem";
 import { usePathname } from "next/navigation";
 
@@ -12,14 +22,34 @@ const guestRoutes = [
   },
 
   {
-    icon: Compass,
-    label: "Browse",
+    icon: Youtube,
+    label: "My Courses",
     href: "/search",
   },
   {
-    icon: PenSquare,
-    label: "Editor",
+    icon: Award,
+    label: "Certificates",
+    href: "/certificates",
+  },
+  {
+    icon: Compass,
+    label: "Explore",
+    href: "/explore",
+  },
+  {
+    icon: Route,
+    label: "Learning Paths",
+    href: "/roadmaps",
+  },
+  {
+    icon: Brush,
+    label: "whiteboard",
     href: "/editor",
+  },
+  {
+    icon: Users,
+    label: "Community forum",
+    href: "/forum",
   },
 ];
 
