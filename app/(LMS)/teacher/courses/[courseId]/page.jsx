@@ -16,6 +16,7 @@ import { CategoryForm } from "./_components/CategoryForm";
 import { PriceForm } from "./_components/PriceForm";
 import { AttachmentForm } from "./_components/AttachmentForm";
 import { ChaptersForm } from "./_components/ChapterForm";
+import { Actions } from "./_components/Actions";
 
 async function courseIdPage({ params }) {
   const { userId } = auth();
@@ -67,6 +68,11 @@ async function courseIdPage({ params }) {
             <h1 className="text-2xl font-medium">Course Setup</h1>
             <span className="text-sm text-slate-700">{completionText}</span>
           </div>
+          <Actions
+            disabled={!isComplete}
+            courseId={params.courseId}
+            isPublished={course.isPublished}
+          />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
           <div>

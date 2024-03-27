@@ -2,6 +2,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ToastProvider } from "@/components/providers/toaster-provider";
+import { ConfettiProvider } from "@/components/providers/confetti-provider";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body className={roboto.className}>
+          <ConfettiProvider />
           <ToastProvider />
           {children}
         </body>

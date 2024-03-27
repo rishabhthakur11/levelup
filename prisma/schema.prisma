@@ -49,7 +49,7 @@ model Chapter {
   title       String?
   description String?
   videoUrl    String?
-  position    Int     @unique
+  position    Int
   isPublished Boolean @default(false)
   isFree      Boolean @default(false)
 
@@ -74,7 +74,7 @@ model MuxData {
 
 model UserProgress {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  userId      String   @db.ObjectId
+  userId      String
   chapterId   String   @db.ObjectId
   chapter     Chapter? @relation(fields: [chapterId], references: [id])
   isCompleted Boolean  @default(false)
@@ -84,7 +84,7 @@ model UserProgress {
 
 model Purchase {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  userId    String   @db.ObjectId
+  userId    String
   courseId  String   @db.ObjectId
   course    Course?  @relation(fields: [courseId], references: [id])
   createdAt DateTime @default(now())
@@ -93,7 +93,7 @@ model Purchase {
 
 model StripeCustomer {
   id               String   @id @default(auto()) @map("_id") @db.ObjectId
-  userId           String   @db.ObjectId
+  userId           String
   stripeCustomerId String   @unique
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt

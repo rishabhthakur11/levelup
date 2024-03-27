@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div className="isolate px-6 lg:px-8 z-10 max-w-7xl mx-auto">
           <div className="mx-auto max-w-2xl pt-20 lg:pt-20">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="color-changing-div bg-btnOrange/70 rounded-full px-16 py-1 text-lg text-black">
+              <div className="color-changing-div bg-btnOrange/70 rounded-full px-16 py-2 text-lg text-black">
                 Get Your Dream Job With LevelUp.
               </div>
             </div>

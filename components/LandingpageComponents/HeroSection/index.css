@@ -1,13 +1,71 @@
 @keyframes colorChange {
-    0% { background-color:   #FF9900; }
-    25% { background-color:   #ffc738; }
-    50% { background-color: #ffbd59; }
-    75% { background-color: #f2af71; }
-    100% { background-color: #ffcc01; }
+  0% {
+    background-color: #ff9900;
   }
+  5% {
+    background-color: #ffb266; /* Lighter shade of orange */
+  }
+  10% {
+    background-color: #ffcc99; /* Lighter shade of orange */
+  }
+  15% {
+    background-color: #ffe5cc; /* Lighter shade of orange */
+  }
+  20% {
+    background-color: #fff5e6; /* Lighter shade of orange */
+  }
+  25% {
+    background-color: #ffebd4; /* Lighter shade of orange */
+  }
+  30% {
+    background-color: #ffe0c2; /* Lighter shade of orange */
+  }
+  35% {
+    background-color: #ffd5b0; /* Lighter shade of orange */
+  }
+  40% {
+    background-color: #ffcc99; /* Lighter shade of orange */
+  }
+  45% {
+    background-color: #ffc285; /* Lighter shade of orange */
+  }
+  50% {
+    background-color: #ffae66; /* Lighter shade of orange */
+  }
+  55% {
+    background-color: #ff9933; /* Lighter shade of orange */
+  }
+  60% {
+    background-color: #ff99cc; /* Lighter shade of pink */
+  }
+  65% {
+    background-color: #ff99e5; /* Lighter shade of pink */
+  }
+  70% {
+    background-color: #ff99ff; /* Lighter shade of pink */
+  }
+  75% {
+    background-color: #ff99ff; /* Lighter shade of pink */
+  }
+  80% {
+    background-color: #ff99ff; /* Lighter shade of pink */
+  }
+  85% {
+    background-color: #ff99ff; /* Lighter shade of pink */
+  }
+  90% {
+    background-color: #ff99ff; /* Lighter shade of pink */
+  }
+  95% {
+    background-color: #ff99ff; /* Lighter shade of pink */
+  }
+  100% {
+    background-color: #ff99ff; /* Lighter shade of pink */
+  }
+}
+  
 
  
   .color-changing-div {
-    /* background-color: red; */
-    animation: colorChange 4s infinite; /* 4s duration, infinite loop */
+    animation: colorChange 15s infinite alternate; /* 4s duration, infinite loop */
   }

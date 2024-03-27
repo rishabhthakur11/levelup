@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 
@@ -6,7 +6,7 @@ const Excalidraw = dynamic(
   async () => (await import("@excalidraw/excalidraw")).Excalidraw,
   {
     ssr: false,
-  },
+  }
 );
 
 export default function TextEditor() {

@@ -9,7 +9,6 @@ import {
   List,
   Route,
   Users,
-  Youtube,
 } from "lucide-react";
 import Sidebaritem from "./Sidebaritem";
 import { usePathname } from "next/navigation";
@@ -20,22 +19,18 @@ const guestRoutes = [
     label: "Dashboard",
     href: "/dashboard",
   },
-
   {
-    icon: Youtube,
-    label: "My Courses",
+    icon: Compass,
+    label: "Explore",
     href: "/search",
   },
+
   {
     icon: Award,
     label: "Certificates",
     href: "/certificates",
   },
-  {
-    icon: Compass,
-    label: "Explore",
-    href: "/explore",
-  },
+
   {
     icon: Route,
     label: "Learning Paths",
@@ -72,16 +67,18 @@ function SidebarRoutes() {
 
   const routes = isTeacherPage ? teacherRoutes : guestRoutes;
   return (
-    <div className="flex flex-col w-full">
-      {routes.map((route) => (
-        <Sidebaritem
-          key={route.href}
-          icon={route.icon}
-          label={route.label}
-          href={route.href}
-        />
-      ))}
-    </div>
+    <>
+      <div className="flex flex-col w-full">
+        {routes.map((route) => (
+          <Sidebaritem
+            key={route.href}
+            icon={route.icon}
+            label={route.label}
+            href={route.href}
+          />
+        ))}
+      </div>
+    </>
   );
 }
 
