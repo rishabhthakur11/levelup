@@ -7,7 +7,7 @@ function page() {
   return (
     <div className={`flex flex-col`}>
       <div className="flex flex-col items-center justify-center h-screen bg-white">
-        <Image src={roadmap} width={350} height={350} alt="heroImage" />
+        <Image src={roadmap} width={350} height={350} alt="heroImage" priority />
         <h1 className="text-5xl font-bold mb-4 animate-fade-in-down ">
           In Beta Testing Phase
         </h1>

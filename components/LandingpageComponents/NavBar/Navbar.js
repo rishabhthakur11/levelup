@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { UserButton, useAuth } from "@clerk/nextjs";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { SideBar } from "./SideBar";
@@ -13,6 +14,8 @@ function Navbar() {
     setSideBar(!sideBar);
     setSideBarIcon(!sideBarIcon);
   };
+  const { userId } = useAuth();
+
   return (
     <div className="flex py-10 items-center px-5">
       {/* leftSide */}
@@ -21,25 +24,44 @@ function Navbar() {
           <p className="text-3xl font-bold curser-pointer">LevelUp</p>
         </Link>
         <div className="flex gap-x-12 text-lg font-normal hidden lg:flex">
-          <p>Learn</p>
-          <p>Tests</p>
-          <p>Roadmaps</p>
+          {userId ? (
+            <Link href="/dashboard">
+              <p className="cursor-pointer">dashboard</p>
+            </Link>
+          ) : (
+            <Link href="/">
+              <p className="cursor-pointer">Learn</p>
+            </Link>
+          )}
+
+          <Link href="https://tests-levelupp.vercel.app">
+            <p className="cursor-pointer">Tests</p>
+          </Link>
+          <Link href="https://smartresumeanalyzer-aknxmypo7e3m8zthkepgvm.streamlit.app">
+            <p className="cursor-pointer">Resume Analysis</p>
+          </Link>
           <p>Find Talent</p>
         </div>
       </div>
-      {/* rightSide */}
+
       <div>
         <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
-          <p className="hover:font-semibold cursor-pointer duration-400">
-            <SignInButton afterSignInUrl="/dashboard">
-              <p>Log In</p>
-            </SignInButton>
-          </p>
-          <SignUpButton afterSignUpUrl="/dashboard">
-            <button className="bg-black text-white px-4 py-2 rounded-full">
-              Sign Up
-            </button>
-          </SignUpButton>
+          {userId ? (
+            <UserButton afterSignOutUrl="/" />
+          ) : (
+            <div className="hidden lg:flex gap-x-7 text-lg text-black font-normal items-center">
+              <p className="hover:font-semibold cursor-pointer duration-400">
+                <SignInButton afterSignInUrl="/dashboard">
+                  <p>Log In</p>
+                </SignInButton>
+              </p>
+              <SignUpButton afterSignUpUrl="/dashboard">
+                <button className="bg-black text-white px-4 py-2 rounded-full">
+                  Sign Up
+                </button>
+              </SignUpButton>
+            </div>
+          )}
         </div>
         <div className="lg:hidden text-black relative">
           <div className="z-50">

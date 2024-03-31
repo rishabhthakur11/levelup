@@ -24,7 +24,13 @@ const CoursesList = ({ items }) => {
       {items.length === 0 && (
         <div className={`flex flex-col mt-10`}>
           <div className="flex flex-col items-center justify-center bg-white">
-            <Image src={explore} width={350} height={350} alt="heroImage" />
+            <Image
+              src={explore}
+              width={350}
+              height={350}
+              alt="heroImage"
+              priority
+            />
             <h1 className="text-4xl font-bold mb-4 animate-fade-in-down ">
               No Courses found
             </h1>

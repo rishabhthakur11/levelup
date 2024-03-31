@@ -7,7 +7,6 @@ import { db } from "@/lib/db";
 export async function POST(req) {
   const body = await req.text();
   const signature = headers().get("Stripe-Signature");
-  const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 
   let event;
 
@@ -15,8 +14,7 @@ export async function POST(req) {
     event = stripe.webhooks.constructEvent(
       body,
       signature,
-      process.env.STRIPE_WEBHOOK_SECRET,
-      endpointSecret
+      process.env.STRIPE_WEBHOOK_SECRET
     );
   } catch (error) {
     return new NextResponse(`Webhook Error: ${error.message}`, { status: 400 });
