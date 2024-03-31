@@ -1,8 +1,8 @@
-import TextEditor from '@/components/TextEditor/TextEditor'
-import React from 'react'
+import TextEditor from "@/components/TextEditor/TextEditor";
+import React from "react";
 
 const editor = () => {
-  return <TextEditor/>;
-}
+  return <TextEditor />;
+};
 
-export default editor
+export default editor;

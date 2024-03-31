@@ -80,6 +80,8 @@ model UserProgress {
   isCompleted Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  @@unique([userId, chapterId])
 }
 
 model Purchase {
@@ -89,11 +91,13 @@ model Purchase {
   course    Course?  @relation(fields: [courseId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@unique([userId, courseId])
 }
 
 model StripeCustomer {
   id               String   @id @default(auto()) @map("_id") @db.ObjectId
-  userId           String
+  userId           String   @unique
   stripeCustomerId String   @unique
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt

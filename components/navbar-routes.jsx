@@ -10,12 +10,12 @@ import { isTeacher } from "@/lib/teacher";
 
 import { SearchInput } from "./search-input";
 
-function NavbarRoutes() {
+export const NavRoute = () => {
   const { userId } = useAuth();
   const pathname = usePathname();
 
   const isTeacherPage = pathname?.startsWith("/teacher");
-  const isCoursePage = pathname?.includes("/chapter");
+  const isCoursePage = pathname?.includes("/courses");
   const isSearchPage = pathname === "/search";
 
   return (
@@ -27,7 +27,7 @@ function NavbarRoutes() {
       )}
       <div className="flex gap-x-2 ml-auto">
         {isTeacherPage || isCoursePage ? (
-          <Link href="/">
+          <Link href="/search">
             <Button size="sm" variant="ghost">
               <LogOut className="h-4 w-4 mr-2" />
               Exit
@@ -44,6 +44,4 @@ function NavbarRoutes() {
       </div>
     </>
   );
-}
-
-export default NavbarRoutes;
+};

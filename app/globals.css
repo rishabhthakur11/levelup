@@ -81,4 +81,47 @@ body,
   }
 }
 
+@keyframes fadeInDown {
+	0% {
+	  opacity: 0;
+	  transform: translateY(-20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  @keyframes fadeInUp {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  @keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  .animate-fade-in-down {
+	animation: fadeInDown 1s ease-out;
+  }
+  
+  .animate-fade-in-up {
+	animation: fadeInUp 1s ease-out;
+  }
+  
+  .animate-fade-in {
+	animation: fadeIn 1s ease-out;
+  }
+
 @import "~@uploadthing/react/styles.css"

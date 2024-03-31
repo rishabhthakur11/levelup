@@ -1,4 +1,8 @@
 import { CourseCard } from "@/components/courseCard";
+import Image from "next/image";
+import React from "react";
+
+import explore from "../public/assets/explore.png";
 
 const CoursesList = ({ items }) => {
   return (
@@ -18,8 +22,16 @@ const CoursesList = ({ items }) => {
         ))}
       </div>
       {items.length === 0 && (
-        <div className="text-center text-sm text-muted-foreground mt-10">
-          No courses found
+        <div className={`flex flex-col mt-10`}>
+          <div className="flex flex-col items-center justify-center bg-white">
+            <Image src={explore} width={350} height={350} alt="heroImage" />
+            <h1 className="text-4xl font-bold mb-4 animate-fade-in-down ">
+              No Courses found
+            </h1>
+            <p className="text-lg text-textGray mb-8 animate-fade-in-up">
+              Please enrole in a course to see it here.
+            </p>
+          </div>
         </div>
       )}
     </div>
