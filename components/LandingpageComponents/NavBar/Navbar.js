@@ -26,7 +26,7 @@ function Navbar() {
         <div className="flex gap-x-12 text-lg font-normal hidden lg:flex">
           {userId ? (
             <Link href="/dashboard">
-              <p className="cursor-pointer">dashboard</p>
+              <p className="cursor-pointer">Dashboard</p>
             </Link>
           ) : (
             <Link href="/">
